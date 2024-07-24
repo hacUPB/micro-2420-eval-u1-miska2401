@@ -39,3 +39,12 @@
 - **Computer Organization and Design** by David A. Patterson and John L. Hennessy.
 - **Operating Systems: Internals and Design Principles** by William Stallings.
 - **Computer Architecture: A Quantitative Approach** by John L. Hennessy and David A. Patterson.
+
+# Ejercicio 2
+La CPU de la computadora se encarga de la decodificación de las instrucciones específicas del programa y del procesamiento de datos.
+
+ La memoria ROM almacena el programa a ser ejecutado. Ésta cuenta con dos registros: el registro de las direcciones y el de datos. 
+
+ También se cuenta con periféricos de entrada (teclado) y de salida (pantalla). Estos elementos están conectados a un elemento adicional de memoria para guardar sus datos de operación.
+
+ Igualmente, se cuenta con una señal de reloj (clock) para sincronizar las acciones del circuito. 
