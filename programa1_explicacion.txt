@@ -1,0 +1,30 @@
+        @i : Carga la dirección de la variable i en el registro A 
+        M=1 : Guarda el valor 1 en la dirección correspondiente a i
+
+        @sum : Carga la dirección de la variable sum en el registro A
+        M=0 : Guarda el valor 0 en la dirección correspondiente a sum
+        
+        @100 : Almacena la constante 100 en el registro A
+        D=A : Transfiere la constante 100 del registro A al registro D
+
+        @i : Carga la dirección de la variable i en el registro A
+        D=D-M : Resta el valor de i a D (100), calculando 100 - i
+        
+        @END : Carga la dirección correspondiente a la etiqueta END en el registro A
+        D;JLE : Se salta a END si D es menor o igual a cero, lo cual equivale a i = 100
+
+        @i : Carga la dirección de la variable i en el registro A
+        D=M : Transfiere el valor de i al registro D 
+
+        @sum : Carga la dirección de la variable sum en el registro A
+        M=M+D : Suma el valor del registro D al de sum
+
+        @i : Carga la dirección de la variable i en el registro A
+        M=M+1 : Incrementa el valor de i en 1
+
+        @4 : Carga la dirección 4 en el registro A
+        0;JMP : Salta a la instrucción en la dirección 4, la cual corresponde a @100
+
+(END) : Define la etiqueta END
+        @END : Carga la dirección correspondiente a la etiqueta END
+        0;JMP : Salta a la dirección de END, creando un bucle infinito
